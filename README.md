@@ -23,14 +23,12 @@ A FastAPI application for managing leads with SQLite storage.
 
 
 ## API Endpoints
-1. POST /leads/: 
-    Create a lead (public)
-    Form data: first_name, last_name, email, resume (file)
 
-2. GET /leads/: 
-    List all leads (protected)
-    Basic Auth: attorney/devpass
+- **POST /leads/**: Create a lead (public)
+  - Form data: `first_name`, `last_name`, `email`, `resume` (file)
 
-3. PATCH /leads/{lead_id}: 
-    Update lead state to REACHED_OUT (protected)
-    Basic Auth: attorney/devpass
+- **GET /leads/**: List all leads (protected)
+  - Basic Auth: `attorney/devpass`
+
+- **PATCH /leads/{lead_id}**: Update lead state to `REACHED_OUT` (protected)
+  - Basic Auth: `attorney/devpass`
